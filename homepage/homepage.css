@@ -10,7 +10,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #FFFFF0;
     box-shadow: 5px 5px 15px black;
 }
 
@@ -32,4 +32,16 @@ body {
 }
 .header a:hover{
     border-bottom: 1px solid #496989; 
+}
+
+
+.main{
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 500px;
+    height: 500px;
+}
+.pearson_img{
+    width: 150px;
+    height: 150px;
 }
