@@ -10,7 +10,20 @@ def create_app():
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
     db.init_app(app)
 
+    from core import main_blp
     app.register_blueprint(main_blp)
     app.register_blueprint(subjects_blp)
+
+    from users import user_blp
+    app.register_blueprint(user_blp)
+    
+    with app.app_context():
+        db.create_all()
+
+    from users import user_blp
+    app.register_blueprint(user_blp)
+    
+    with app.app_context():
+        db.create_all()
 
     return app
