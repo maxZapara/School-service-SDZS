@@ -6,7 +6,7 @@ body{
 .header {
     display: flex;
     align-items: center;
-    
+
     background-color: #FFFFF0;
     box-shadow: 5px 5px 15px black;
 }
@@ -24,9 +24,6 @@ body{
     transition: border-bottom 0.5s ease; 
 }
 
-.header .home{
-    font-weight: bold;
-}
 .header a:hover{
     border-bottom: 1px solid #496989; 
 }
