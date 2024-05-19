@@ -24,3 +24,30 @@ body {
     font-weight: bold;
     font-size: xx-large;
 }
+.rectangle_lesson {
+    border-radius: 10px;
+    height: 90px; 
+    width: 336px;
+    background-color: #58A399; 
+}
+
+.rectangle_lesson1 {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 185px;
+    width: 336px;
+    background-color: #F1F1F1;
+    box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.lesson_name_block{
+    padding-left: 8px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.lesson_name_teacher{
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: larger;
+}
+

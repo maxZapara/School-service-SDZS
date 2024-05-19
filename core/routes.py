@@ -12,4 +12,9 @@ def login():
 @main_blp.route("/register")
 def register():
     return render_template('authorization/sign_up/signup.html')
+@main_blp.route("/students")
+def students():
+    return render_template('homepage/students.html')
+
+
 

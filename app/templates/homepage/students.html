@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/heading.css">
-    <link rel="stylesheet" href="/static/homepage.css">
-
-    <title>Home Page</title>
+    <link rel="stylesheet" href="/static/students.css">
+    <title>Students</title>
 </head>
 <body>
     <nav class="header">
@@ -16,20 +15,10 @@
         <a href="teachers.html" class="teachers">Teachers</a>
         <a href="{{ url_for('main.students') }}" class="students">Students</a> 
         <a href="{{ url_for('main.login') }}">Login</a> 
-    </nav>   
-    <div class="main">
-        <nav>
-            <img src="https://cdn.pixabay.com/photo/2016/11/14/17/39/person-1824147_1280.png" alt="" class="pearson_img">
-        </nav>
-        <nav class="personal_information">
-            <p class="name">Maksym White</p>
-        </nav>
+    </nav> 
+    <div class="student">
+        <img src="https://w7.pngwing.com/pngs/100/522/png-transparent-computer-icons-plus-and-minus-signs-symbol-plus-miscellaneous-cross-sign-thumbnail.png alt="" class="pearson_img">
+        <img src="https://banner2.cleanpng.com/20180601/bsq/kisspng-computer-icons-plus-and-minus-signs-clip-art-plus-symbol-5b113eb0b38620.2093933315278568167353.jpg" class="add_img">
     </div>
-    <div class="lessons">
-        <div class="rectangle_lesson1">
-            <div class="rectangle_lesson"><p class="lesson_name_teacher">Masha Forger</p></div><p class="lesson_name_block">English</p>
-        </div>
-    </div>
-
 </body>
 </html>
