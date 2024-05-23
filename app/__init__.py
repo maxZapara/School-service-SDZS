@@ -6,6 +6,7 @@ def create_app():
     app = Flask(__name__, static_url_path='/static')
 
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+    app.config["SECRET_KEY"] = "fdsjfsdkf"
     db.init_app(app)
 
     from core import main_blp
