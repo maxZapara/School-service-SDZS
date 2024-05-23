@@ -7,6 +7,26 @@ body {
     background-color: #E2F4C5;
 }
 .student{
+    padding-left: 25px;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+}
+.student .add_button{
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 550px;
+    color: rgb(100, 100, 148);
+}
+.student .email{
+    margin-left: 50px;
+    color: rgb(100, 100, 148);
+}
+.add_button{
+    padding-left: 400px;
+}
+.student{
     margin-top: 50px;
     width: 100%;
     height: 80px;

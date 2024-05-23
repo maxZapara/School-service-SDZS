@@ -8,8 +8,12 @@ body {
 }
 
 .main{
-    display: flex; 
-    align-items: center;
+    padding-left: 50px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.main .email{
+    color: rgb(100, 100, 148);
 }
 .pearson_img{
     margin-top: 20px;
