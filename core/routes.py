@@ -15,6 +15,15 @@ def register():
 @main_blp.route("/students")
 def students():
     return render_template('homepage/students.html')
+@main_blp.route("/teachers")
+def teachers():
+    return render_template('homepage/teachers.html')
+@main_blp.route("/student/page")
+def studentspage():
+    return render_template('homepage/studentspage.html')
+@main_blp.route("/teacher/page")
+def teacherspage():
+    return render_template('homepage/teacherspage.html')
 
 
 
