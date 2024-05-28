@@ -153,31 +153,4 @@ button:hover {
     font-size: larger;
 }
 
-.subjects{
-    margin-left: 100px;
-    
-    display: flex;
-    border-radius: 10px;
-    margin-left: 15px;
-    
-}
 
-.subject-title{
-    font-size: 30px;
-    font-family: 'griffy', cursive;
-    color: darkblue;
-}
-
-.subject-teacher{
-    padding-left: 50px;
-    font-size: 20px;
-    font-family: 'Times New Roman', cursive;
-    color: rgb(0, 86, 139);
-}
-
-.subject-main{
-    
-    background-color: #88cd390a;
-    padding-left: 10px;
-    font-size: 20px;
-}
