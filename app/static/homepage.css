@@ -101,6 +101,7 @@ button {
   cursor: pointer;
   transition: 0.5s;
 }
+
 button:hover {
   color: #4caf50;
   transform: rotate(22deg);
@@ -153,4 +154,69 @@ button:hover {
     font-size: larger;
 }
 
+/* #|||||||||||||||||||||||||||| */
 
+.Subjects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.sub-img {
+  width: 400px;
+  height: 222.34px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #6c8335;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+.sub-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+
+.sub-masterclas {
+  flex: 1 1 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text-area {
+  width: 400px;
+  background-color: #dbf7ae;
+  padding: 15px;
+  border: 2px solid #313131;
+  margin-bottom: 75px;
+  border-radius: 0 0 10px 10px;
+}
+
+.sub-info-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.sub-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.sub-students,
+.sub-length,
+.sub-teacher {
+  font-size: 12px;
+}
+
+.sub-text-area:hover .img-mastercover {
+  opacity: 0.5;
+}
