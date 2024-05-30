@@ -7,3 +7,7 @@ class RegistrationForm(FlaskForm):
     surname = StringField('surname', validators=[DataRequired(), Length(max=50)])
     email = EmailField('email', validators=[DataRequired(), Email()])
     password = PasswordField('password', validators=[DataRequired(), Length(min=8)])
+
+class LoginForm(FlaskForm):
+    email = EmailField('email', validators=[DataRequired(), Email()])
+    password = PasswordField('password', validators=[DataRequired(), Length(min=8)])
