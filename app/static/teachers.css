@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #F4D7F9;
+}
+a{
+    text-decoration: none;
+}
+.img-avatar{
+    margin-left: 380px;
+}
+.title-total{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 15px 14px 15px rgba(0, 0, 0, 0.5);
+    max-width: 1500px;
+    display: block;
+    flex-direction: row;
+    border-radius: 25px;
+    position: relative;
+    margin: 20px auto;
+    transition: border-bottom 0.5s ease;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.card .desc {
+    padding: 0.5rem 1rem;
+    font-size: 19px;
+    color: #7469B6;
+}
+
+.card .actions {
+    display: flex;
+    justify-content: right;
+    margin-right: 880px;
+}
+
+.card .actions svg {
+    width: 30px;
+    height: 30px;
+
+}
+
+.card svg {
+    width: 85px;
+    height: 85px;
+}
+
+.mistake_middle {
+    color: #16a085;
+    font-size: larger;
+    font-weight: bolder;
+    margin:0 0 0 2.5px;
+}
+
+.img-avatar {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(-60deg, #AD88C6 0%, #FFE6E6 100%);
+    top: 15px;
+    left: 85px;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+path {
+    fill: white;
+}
+
+.img-portada {
+    width: 100%;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url("https://images.pexels.com/photos/2058853/pexels-photo-2058853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #8bc34a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: #4caf50;
+    transform: rotate(22deg);
+}
+
+.student {
+    padding-left: 25px;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+}
+
+.student .add_button {
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 550px;
+    color: rgb(100, 100, 148);
+}
+
+.student .email {
+    margin-left: 50px;
+    color: rgb(100, 100, 148);
+}
+
+.add_button {
+    padding-left: 400px;
+}
+
+.student {
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 15px rgb(0, 0, 0);
+}
+
+.pearson_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.add_img {
+    margin-left: 1300px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
