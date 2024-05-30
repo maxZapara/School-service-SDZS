@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #E2F4C5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #E2F4C5;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
+
 .card {
   background: #fff;
   border-radius: 4px;
@@ -21,8 +23,9 @@ body {
   border-radius: 25px;
   position: relative;
   margin: 20px auto;
-  transition: border-bottom 0.5s ease; 
+  transition: border-bottom 0.5s ease;
 }
+
 .card h2 {
   margin: 0;
   padding: 0 1rem;
@@ -39,22 +42,26 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 0.5rem 1rem;
-  
+
 }
-.card .actions svg{
-    width: 30px;
-    height: 30px;
+
+.card .actions svg {
+  width: 30px;
+  height: 30px;
 }
+
 .card svg {
   width: 85px;
   height: 85px;
   margin: 0 auto;
 }
-.mistake_middle{
-    color: #16a085;
-    font-size: larger;
-    font-weight: bolder;
+
+.mistake_middle {
+  color: #16a085;
+  font-size: larger;
+  font-weight: bolder;
 }
+
 .img-avatar {
   width: 70px;
   height: 70px;
@@ -106,63 +113,73 @@ button:hover {
   color: #4caf50;
   transform: rotate(22deg);
 }
-.main{
-    padding-left: 50px;
-    font-size: larger;
-    font-weight: bolder;
+
+.main {
+  padding-left: 50px;
+  font-size: larger;
+  font-weight: bolder;
 }
-.main .email{
-    color: rgb(100, 100, 148);
+
+.main .email {
+  color: rgb(100, 100, 148);
 }
-.pearson_img{
-    margin-top: 20px;
-    margin-left: 12px;
-    width: 150px;
-    height: 150px;
+
+.pearson_img {
+  margin-top: 20px;
+  margin-left: 12px;
+  width: 150px;
+  height: 150px;
 }
-.personal_information{
-    margin-left: 15px;
+
+.personal_information {
+  margin-left: 15px;
 }
-.personal_information .name{
-    font-weight: bold;
-    font-size: xx-large;
+
+.personal_information .name {
+  font-weight: bold;
+  font-size: xx-large;
 }
+
 .rectangle_lesson {
-    border-radius: 10px;
-    height: 90px; 
-    width: 336px;
-    background-color: #58A399; 
+  border-radius: 10px;
+  height: 90px;
+  width: 336px;
+  background-color: #58A399;
 }
 
 .rectangle_lesson1 {
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 185px;
-    width: 336px;
-    background-color: #F1F1F1;
-    box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+  height: 185px;
+  width: 336px;
+  background-color: #F1F1F1;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
-.lesson_name_block{
-    padding-left: 8px;
-    font-weight: bolder;
-    font-size: larger;
+
+.lesson_name_block {
+  padding-left: 8px;
+  font-weight: bolder;
+  font-size: larger;
 }
-.lesson_name_teacher{
-    padding-left: 8px;
-    font-weight: 500;
-    font-size: larger;
+
+.lesson_name_teacher {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: larger;
 }
 
 /* #|||||||||||||||||||||||||||| */
 
-.Subjects {
+/*
+.subject {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   margin-top: 50px;
 }
 
 .sub-img {
+  background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
   width: 400px;
   height: 222.34px;
   margin: 0;
@@ -182,8 +199,9 @@ button:hover {
 }
 
 .sub-masterclas {
-  flex: 1 1 400px;
-  width: 300px;
+  flex: 1 1 400px; 
+  width: 400px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,9 +209,9 @@ button:hover {
 }
 
 .sub-text-area {
-  width: 400px;
   background-color: #dbf7ae;
-  padding: 15px;
+  max-width: 400px;
+  width: 400px;
   border: 2px solid #313131;
   margin-bottom: 75px;
   border-radius: 0 0 10px 10px;
@@ -219,4 +237,139 @@ button:hover {
 
 .sub-text-area:hover .img-mastercover {
   opacity: 0.5;
+}
+*/
+
+
+
+.courses {
+  background-color: #292929;
+  height: 150vh;
+  display: flex;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.container>h2,
+.container>p {
+  text-align: center;
+}
+
+.img-mastercover {
+  width: 400px;
+  height: 222.34px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #313131;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.img-mastercover:hover {
+  opacity: 0.5;
+}
+
+.img-mastercover {
+  background-image: url(https://images.theconversation.com/files/49135/original/22qc7r28-1400667334.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=754&fit=clip);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+
+.img-mastercover:hover .play-button {
+  display: flex;
+  z-index: 2;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}
+
+/*  Masterclass */
+
+.masterclass {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card-masterclass {
+  flex: 1 1 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Card Text  */
+.card-text-area {
+  width: 400px;
+  height: 180px;
+  background-color: #dbf7ae;
+  padding: 15px;
+  border: 2px solid #313131;
+  margin-bottom: 75px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-text-area:hover .img-mastercover {
+  opacity: 0.5;
+}
+
+.card-info-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.card-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.students,
+.length{
+  font-size: 12px;
+}
+
+.instructeur{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+/* Button  */
+
+.btn-secondary {
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: 2px solid #313131;
+  background-color: #1e1e1e;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+
+.btn-secondary a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid #1e1e1e;
 }
