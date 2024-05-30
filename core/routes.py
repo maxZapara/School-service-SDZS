@@ -24,6 +24,13 @@ def studentspage():
 @main_blp.route("/teacher/page")
 def teacherspage():
     return render_template('homepage/teacherspage.html')
-
-
+@main_blp.route("/cratecourse")
+def cratecourse():
+    return render_template('homepage/addcourse.html')
+@main_blp.route("/coursepage/c")
+def coursepage():
+    return render_template('homepage/coursepage.html')
+@main_blp.route("/subjects/a")
+def lessonpage():
+    return render_template('homepage/lessonpage.html')
 

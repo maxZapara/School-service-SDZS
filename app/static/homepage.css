@@ -220,3 +220,19 @@ button:hover {
 .sub-text-area:hover .img-mastercover {
   opacity: 0.5;
 }
+.add_course{
+  font-size: larger;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-left: 525px;
+  background-color: #16a085;
+  width: 145px;
+  border-radius: 5px;
+  box-shadow:3px 15px 15px rgba(0, 0, 0, 0.511);
+}
+.add_course:hover{
+  background-color: #40b09a;
+  box-shadow:3px 25px 25px rgba(92, 92, 92, 0.71);
+
+}
