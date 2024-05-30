@@ -1,4 +1,4 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,27 +12,16 @@ d<!DOCTYPE html>
         <form method="POST" action="{{url_for('users.login')}}">
             {{ form.csrf_token }}
             <h3 class="text-center">Sign in</h3>
+            <!-- <div class="form-group">
+                <input class="form-control item" type="text" name="username" minlength="4" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Login" required>
+            </div> -->
             <div class="form-group">
-                {{ form.email(placeholder="Email", class="form-control item") }}
-                {% if form.email.errors %}
-                    <ul class="errors">
-                    {% for error in form.email.errors %}
-                        <li>{{ error }}</li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
-                <!-- <input class="form-control item" type="text" name="username" minlength="4" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Login" required> -->
+                <!-- <input class="form-control item" type="email" name="email" id="email" placeholder="Email" required> -->
+                {{form.email(placeholder='Email', class="form-control item")}}
             </div>
             <div class="form-group">
-                {{ form.password(placeholder="Password", class="form-control item") }}
-                {% if form.password.errors %}
-                    <ul class="errors">
-                    {% for error in form.password.errors %}
-                        <li>{{ error }}</li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
                 <!-- <input class="form-control item" type="password" name="password" minlength="6" id="password" placeholder="Password" required> -->
+                {{form.password(placeholder='Password', class="form-control item")}}
             </div>
             
             <div class="form-group">
