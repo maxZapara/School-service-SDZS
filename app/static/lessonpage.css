@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #E2F4C5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  background: linear-gradient(to left, #E2F4C5, #c5ddf4);
 }
 
 .container {

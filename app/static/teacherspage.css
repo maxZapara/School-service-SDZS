@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Titillium Web', sans-serif;
-    background-color: #F4D7F9;
+    font-family: "Roboto Slab", serif;
+    background: linear-gradient(to left, #efc5f4, #f6f6f6);
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
+
 .card {
   background: #fff;
   border-radius: 4px;
@@ -21,8 +22,9 @@ body {
   border-radius: 25px;
   position: relative;
   margin: 20px auto;
-  transition: border-bottom 0.5s ease; 
+  transition: border-bottom 0.5s ease;
 }
+
 .card h2 {
   margin: 0;
   padding: 0 1rem;
@@ -39,31 +41,34 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 0.5rem 1rem;
-  
+
 }
-.card .actions svg{
-    width: 30px;
-    height: 30px;
+
+.card .actions svg {
+  width: 30px;
+  height: 30px;
 }
+
 .card svg {
   width: 85px;
   height: 85px;
   margin: 0 auto;
 }
-.mistake_middle{
-    color: #16a085;
-    font-size: larger;
-    font-weight: bolder;
+
+.mistake_middle {
+  color: #16a085;
+  font-size: larger;
+  font-weight: bolder;
 }
 .img-avatar {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    border-radius: 50%;
-    border: 6px solid white;
-    background-image: linear-gradient(-60deg, #AD88C6 0%, #FFE6E6 100%);
-    top: 15px;
-    left: 85px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(30deg, #efc5f4, #f6f6f6 100%);
+  top: 17px;
+  left: 85px;
 }
 
 .card-text {
@@ -74,7 +79,10 @@ body {
 .title-total {
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
+.title-total h2{
 
+  font-family: "Pixelify Sans", sans-serif;
+}
 path {
   fill: white;
 }
@@ -84,13 +92,13 @@ path {
 }
 
 .portada {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image: url("https://images.pexels.com/photos/2058853/pexels-photo-2058853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-position: bottom center;
-    background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("https://images.pexels.com/photos/1045615/pexels-photo-1045615.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-position: -30px ;
+  background-size: cover;
 }
 
 button {
@@ -101,83 +109,92 @@ button {
   cursor: pointer;
   transition: 0.5s;
 }
+
 button:hover {
   color: #4caf50;
   transform: rotate(22deg);
 }
-.main{
-    padding-left: 50px;
-    font-size: larger;
-    font-weight: bolder;
+
+.main {
+  padding-left: 50px;
+  font-size: larger;
+  font-weight: bolder;
 }
-.main .email{
-    color: rgb(100, 100, 148);
+
+.main .email {
+  color: rgb(100, 100, 148);
 }
-.pearson_img{
-    margin-top: 20px;
-    margin-left: 12px;
-    width: 150px;
-    height: 150px;
+
+.pearson_img {
+  margin-top: 20px;
+  margin-left: 12px;
+  width: 150px;
+  height: 150px;
 }
-.personal_information{
-    margin-left: 15px;
+
+.personal_information {
+  margin-left: 15px;
 }
-.personal_information .name{
-    font-weight: bold;
-    font-size: xx-large;
+
+.personal_information .name {
+  font-weight: bold;
+  font-size: xx-large;
 }
+
 .rectangle_lesson {
-    border-radius: 10px;
-    height: 90px; 
-    width: 336px;
-    background-color: #58A399; 
+  border-radius: 10px;
+  height: 90px;
+  width: 336px;
+  background-color: #58A399;
 }
 
 .rectangle_lesson1 {
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 15px;
-    height: 185px;
-    width: 336px;
-    background-color: #F1F1F1;
-    box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-.lesson_name_block{
-    padding-left: 8px;
-    font-weight: bolder;
-    font-size: larger;
-}
-.lesson_name_teacher{
-    padding-left: 8px;
-    font-weight: 500;
-    font-size: larger;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+  height: 185px;
+  width: 336px;
+  background-color: #F1F1F1;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.subjects{
-    margin-left: 100px;
-    
-    display: flex;
-    border-radius: 10px;
-    margin-left: 15px;
-    
+.lesson_name_block {
+  padding-left: 8px;
+  font-weight: bolder;
+  font-size: larger;
 }
 
-.subject-title{
-    font-size: 30px;
-    font-family: 'griffy', cursive;
-    color: darkblue;
+.lesson_name_teacher {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: larger;
 }
 
-.subject-teacher{
-    padding-left: 50px;
-    font-size: 20px;
-    font-family: 'Times New Roman', cursive;
-    color: rgb(0, 86, 139);
+.subjects {
+  margin-left: 100px;
+
+  display: flex;
+  border-radius: 10px;
+  margin-left: 15px;
+
 }
 
-.subject-main{
-    
-    background-color: #88cd390a;
-    padding-left: 10px;
-    font-size: 20px;
+.subject-title {
+  font-size: 30px;
+  font-family: 'griffy', cursive;
+  color: darkblue;
+}
+
+.subject-teacher {
+  padding-left: 50px;
+  font-size: 20px;
+  font-family: 'Times New Roman', cursive;
+  color: rgb(0, 86, 139);
+}
+
+.subject-main {
+
+  background-color: #88cd390a;
+  padding-left: 10px;
+  font-size: 20px;
 }
