@@ -1,0 +1,47 @@
+d<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/signin.css">
+   
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="sign_in_block">
+        <form method="POST" action="{{url_for('users.sign_in')}}">
+            {{ form.csrf_token }}
+            <h3 class="text-center">Sign in</h3>
+            <div class="form-group">
+                {{ form.email(placeholder="Email", class="form-control item") }}
+                {% if form.email.errors %}
+                    <ul class="errors">
+                    {% for error in form.email.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                <!-- <input class="form-control item" type="text" name="username" minlength="4" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Login" required> -->
+            </div>
+            <div class="form-group">
+                {{ form.password(placeholder="Password", class="form-control item") }}
+                {% if form.password.errors %}
+                    <ul class="errors">
+                    {% for error in form.password.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                <!-- <input class="form-control item" type="password" name="password" minlength="6" id="password" placeholder="Password" required> -->
+            </div>
+            
+            <div class="form-group">
+                <p class="create_acount">If you don't have an account, <a href=".\autorization\sign_up\signup.html">create one</a></p>
+            </div>    
+            <div class="form-group">
+                <button class="sign_in_accounnt" type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
