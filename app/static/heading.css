@@ -13,7 +13,7 @@ body{
 
 .title_site {
     margin-left: 40px;
-    margin-right: 800px; 
+    margin-right: 950px; 
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -22,7 +22,7 @@ body{
     text-decoration: none;
     margin-right: 50px;
     border-bottom: 1px solid transparent; 
-    transition: border-bottom 0.5s ease; 
+    transition: border-bottom 2s ease; 
     font-size: large;
     font-weight: bold;
     
@@ -32,5 +32,7 @@ body{
     font-family: "Pixelify Sans", sans-serif;
 }
 .header a:hover{
-    border-bottom: 1px solid #496989; 
+    color: #2f4254; 
+    font-size: x-large;
+    font-weight: bolder;
 }

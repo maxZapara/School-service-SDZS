@@ -34,18 +34,20 @@ body {
   padding: 0.5rem 1rem;
   font-size: 19px;
   color: #16a085;
+  font-family: "Roboto Slab", serif;
 }
 
 .card .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  margin: 0;
+  
 }
 
 .card .actions svg {
   width: 30px;
   height: 30px;
+  margin-left: 19px;
 }
 
 .card svg {
