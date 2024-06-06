@@ -1,6 +1,7 @@
 from app.extensions import db
 from sqlalchemy.sql import func
 from flask_login import UserMixin
+from subjects.models import Subject
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -12,3 +13,4 @@ class User(db.Model, UserMixin):
     is_student = db.Column(db.Boolean, default=True)
     is_chief_teacher = db.Column(db.Boolean, default=False)
     created_at = db.Column(db.DateTime, default=func.now())
+    subjects = db.relationship("Subject", backref="subjects")
