@@ -13,11 +13,11 @@ def students():
 def teachers():
     return render_template('homepage/teachers.html')
 
-@main_blp.route("/student/page")
+@main_blp.route("/student")
 def studentspage():
     return render_template('homepage/studentspage.html')
 
-@main_blp.route("/teacher/page")
+@main_blp.route("/teacher")
 def teacherspage():
     return render_template('homepage/teacherspage.html')
 
@@ -32,7 +32,3 @@ def coursepage():
 @main_blp.route("/subjects/a")
 def lessonpage():
     return render_template('homepage/lessonpage.html')
-
-@main_blp.route("/login")
-def login():
-    return render_template('authorization/sign_in/signin.html')
