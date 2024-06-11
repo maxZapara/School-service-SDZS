@@ -14,7 +14,7 @@
         <a href="#" class="subjects">Subjects</a>
         <a href="{{ url_for('main.teachers') }}" class="teachers">Teachers</a>
         <a href="{{ url_for('main.students') }}" class="students">Students</a> 
-        <a href="{{ url_for('main.login') }}">Login</a> 
+        <a href="{{ url_for('users.sign_in') }}">Login</a> 
     </nav> 
     <nav class="sign_in_block">
         <form method="POST" action="{{url_for('subjects.create_subject')}}">
