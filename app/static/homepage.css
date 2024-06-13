@@ -32,7 +32,7 @@ body {
 
 .card .desc {
   padding: 0.5rem 1rem;
-  font-size: 19px;
+  font-size: 10px;
   color: #16a085;
   font-family: "Roboto Slab", serif;
 }
@@ -82,7 +82,7 @@ body {
 .title-total{
   margin-left: 50px;
   margin-top: 25px;
-  font-size: x-large;
+  font-size: large;
 
   font-family: "Pixelify Sans", sans-serif;
   color: black;

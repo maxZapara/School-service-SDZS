@@ -7,7 +7,9 @@ def home():
 
 @main_blp.route("/students")
 def students():
-    return render_template('homepage/students.html')
+    from users.models import User
+    users=User.query.filter_by(is_student = True).all() 
+    return render_template('homepage/students.html', users=users)
 
 @main_blp.route("/teachers")
 def teachers():
@@ -19,7 +21,9 @@ def studentspage():
 
 @main_blp.route("/teacher")
 def teacherspage():
-    return render_template('homepage/teacherspage.html')
+    from users.models import User
+    teachers=User.query.filter_by(is_teacher = True).all() 
+    return render_template('homepage/teacherspage.html', techers=teachers)
 
 @main_blp.route("/cratecourse")
 def cratecourse():
