@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block head %}
+  <link rel="stylesheet" href="/static/homepage.css" />
+  <title>Home Page</title>
+  {% endblock %}
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/static/normalize.css" />
-    <link rel="stylesheet" href="/static/heading.css" />
-    <link rel="stylesheet" href="/static/homepage.css" />
-
-    <title>Home Page</title>
-  </head>
-
-  <body>
-    <nav class="header">
-      <h1 class="title_site">SDZS</h1>
-      <a href="{{ url_for('main.home') }}" class="home">Home</a>
-      {% if current_user.is_authenticated  %}
-      {% if current_user.is_teacher or current_user.is_chief_teacher %}  
-      <a href="{{ url_for('main.students') }}" class="students">Students</a>
-      {% endif %}
-      <a href="{{ url_for('main.teachers') }}" class="teachers">Teachers</a>
-      {% endif %}
-      <a href="{{ url_for('users.sign_in') }}">Login</a>
-    </nav>
+  {% block content %}
+    
 
     <div class="container">
       {% if current_user.is_authenticated %}
@@ -270,5 +253,5 @@
         </div>
       </div>
 
-  </body>
-</html>
+  {% endblock %}
+

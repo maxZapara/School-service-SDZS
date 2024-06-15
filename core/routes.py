@@ -36,3 +36,4 @@ def coursepage():
 @main_blp.route("/subjects/a")
 def lessonpage():
     return render_template('homepage/lessonpage.html')
+

@@ -1,3 +1,4 @@
+from flask_login import login_required, logout_user
 from . import user_blp
 from .forms import RegistrationForm, LoginForm
 from flask import redirect, render_template, url_for
@@ -24,3 +25,9 @@ def sign_in():
         login_user(user)
         return redirect('/')
     return render_template('autorization/sign_in/signin.html', form=form)
+
+@user_blp.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect("/")
