@@ -9,14 +9,15 @@ class Subject(db.Model):
     day_of_week = db.Column(db.String, nullable=False)
     teacher_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     repeat_weekly = db.Column(db.Boolean, default=True)
-    materials = db.relationship("Material", backref="materials")
+    materials = db.relationship("Material", backref="materials", lazy=True)
 
 class Material(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String, nullable=False)
+    #description = db.Column(db.Text, nullable=True)
     created_at = db.Column(db.DateTime, default=func.now())
     subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'), nullable=False)
-    material_files = db.relationship("MaterialFile", backref="material_files")
+    files = db.relationship("MaterialFile", backref="material_files", lazy=True)
     
 class MaterialFile(db.Model):
     id = db.Column(db.Integer, primary_key=True)
