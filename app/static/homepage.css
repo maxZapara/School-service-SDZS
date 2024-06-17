@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web', sans-serif;
-  background-color: #E2F4C5;
+  font-family: "Roboto Slab", serif;
+  background: linear-gradient(to left, #E2F4C5, #c5ddf4);
 }
 
 .container {
@@ -17,7 +16,7 @@ body {
   background: #fff;
   border-radius: 4px;
   box-shadow: 15px 14px 15px rgba(0, 0, 0, 0.5);
-  max-width: 400px;
+  max-width: 430px;
   display: flex;
   flex-direction: row;
   border-radius: 25px;
@@ -33,21 +32,22 @@ body {
 
 .card .desc {
   padding: 0.5rem 1rem;
-  font-size: 19px;
+  font-size: 10px;
   color: #16a085;
+  font-family: "Roboto Slab", serif;
 }
 
 .card .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 0.5rem 1rem;
-
+  
 }
 
 .card .actions svg {
   width: 30px;
   height: 30px;
+  margin-left: 19px;
 }
 
 .card svg {
@@ -60,6 +60,7 @@ body {
   color: #16a085;
   font-size: larger;
   font-weight: bolder;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 .img-avatar {
@@ -68,9 +69,9 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 6px solid white;
-  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  background-image: linear-gradient(30deg, #c5ddf4 0%, #72eda7 100%);
   top: 15px;
-  left: 85px;
+  left: 105px;
 }
 
 .card-text {
@@ -78,8 +79,13 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.title-total {
-  padding: 2.5em 1.5em 1.5em 1.5em;
+.title-total{
+  margin-left: 50px;
+  margin-top: 25px;
+  font-size: large;
+
+  font-family: "Pixelify Sans", sans-serif;
+  color: black;
 }
 
 path {
@@ -95,7 +101,7 @@ path {
   height: 100%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-image: url("https://images.pexels.com/photos/1420008/pexels-photo-1420008.jpeg");
+  background-image: url("https://images.pexels.com/photos/5665440/pexels-photo-5665440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1d");
   background-position: bottom center;
   background-size: cover;
 }
@@ -168,96 +174,6 @@ button:hover {
   font-weight: 500;
   font-size: larger;
 }
-
-/* #|||||||||||||||||||||||||||| */
-
-/*
-.subject {
-  display: flex;
-  flex-wrap: wrap; 
-  margin-top: 50px;
-}
-
-.sub-img {
-  background-image: url(https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png);
-  width: 400px;
-  height: 222.34px;
-  margin: 0;
-  padding: 0;
-  border: 2px solid #6c8335;
-  border-radius: 10px 10px 0 0;
-  position: relative;
-  transition: 0.3s;
-}
-
-
-.sub-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  cursor: pointer;
-}
-
-.sub-masterclas {
-  flex: 1 1 400px; 
-  width: 400px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sub-text-area {
-  background-color: #dbf7ae;
-  max-width: 400px;
-  width: 400px;
-  border: 2px solid #313131;
-  margin-bottom: 75px;
-  border-radius: 0 0 10px 10px;
-}
-
-.sub-info-top {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-
-.sub-info-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-}
-
-.sub-students,
-.sub-length,
-.sub-teacher {
-  font-size: 12px;
-}
-
-.sub-text-area:hover .img-mastercover {
-  opacity: 0.5;
-}
-<<<<<<< HEAD
-.add_course{
-  font-size: larger;
-  text-decoration: none;
-  font-weight: bolder;
-  margin-top: 20px;
-  margin-left: 525px;
-  background-color: #16a085;
-  width: 145px;
-  border-radius: 5px;
-  box-shadow:3px 15px 15px rgba(0, 0, 0, 0.511);
-}
-.add_course:hover{
-  background-color: #40b09a;
-  box-shadow:3px 25px 25px rgba(92, 92, 92, 0.71);
-
-=======
-*/
-
-
 
 .courses {
   background-color: #292929;
@@ -389,5 +305,4 @@ button:hover {
 .btn-secondary:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
   border: 2px solid #1e1e1e;
->>>>>>> dafc9ac76178808a83657ff453946dba17d346d3
 }

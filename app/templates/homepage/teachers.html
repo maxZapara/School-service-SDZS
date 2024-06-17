@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/heading.css">
+{% extends 'base.html' %}
+{% block head %}    
     <link rel="stylesheet" href="/static/teachers.css">
     <title>Teachers</title>
-</head>
+{% endblock %}
 
-<body>
-    <nav class="header">
-        <h3 class="title_site">SDZS</h3>
-        <a href="{{ url_for('main.home') }}" class="home">Home</a>
-        <a href="#" class="subjects">Subjects</a>
-        <a href="{{ url_for('main.teachers') }}" class="teachers">Teachers</a>
-        <a href="{{ url_for('main.students') }}" class="students">Students</a>
-        <a href="{{ url_for('main.login') }}">Login</a>
-    </nav>
+
+{% block content %}
+      {% for user in users %}
     <a href="{{ url_for('main.teacherspage') }}">
         <div class="card">
             <div class="img-avatar">
@@ -34,13 +23,12 @@
 
                 </div>
                 <div class="title-total">
-                    <h2>Era Foxy</h2>
+                    <h2>{{user.name}}{{user.surname}}</h2>
 
-                    <div class="desc">example@gmail.com</div>
+                    <div class="desc">{{user.email}}</div>
                 </div>
             </div>
         </div>
     </a>
-</body>
-
-</html>
+    {% endfor %}
+{% endblock %}

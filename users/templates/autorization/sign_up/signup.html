@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/signup.css">
+{% extends 'base.html' %}
+{% block head %}   
+    <link rel="stylesheet" href="/static/sign.css">
     <title>Sign in</title>
-</head>
-<body>
+{% endblock %}
+
+
+{% block content %}
     <div class="sign_in_block">
         <form action="{{ url_for('users.sign_up') }}" method="post">
             {{ form.csrf_token }}
@@ -63,5 +62,4 @@
             </div>
         </form>
     </div>
-</body>
-</html>
+{% endblock %}

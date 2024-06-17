@@ -6,14 +6,15 @@ body{
 .header {
     display: flex;
     align-items: center;
-
-    background-color: #f5f4f4;
+    height: 95px;
+    background-color: #ECEAF4;
     box-shadow: 5px 5px 15px black;
 }
 
 .title_site {
     margin-left: 40px;
-    margin-right: 800px; /* Відступ від заголовка */
+    margin-right: 950px; 
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 .header a {
@@ -21,10 +22,17 @@ body{
     text-decoration: none;
     margin-right: 50px;
     border-bottom: 1px solid transparent; 
-    transition: border-bottom 0.5s ease; 
-}
+    transition: border-bottom 2s ease; 
+    font-size: large;
+    font-weight: bold;
+    
 
+}
+.login{
+    font-family: "Pixelify Sans", sans-serif;
+}
 .header a:hover{
-    border-bottom: 1px solid #496989; 
+    color: #2f4254; 
+    font-size: x-large;
+    font-weight: bolder;
 }
-
