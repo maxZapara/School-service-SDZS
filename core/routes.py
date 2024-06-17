@@ -1,9 +1,15 @@
 from . import main_blp
 from flask import render_template
+from subjects.models import Subject
+from users.models import User
 
 @main_blp.route("/")
 def home():
-    return render_template('homepage/homepage.html')
+    subjects=Subject.query.all()
+    data=[]
+    for subject in subjects:
+        data.append({"subject": subject, "teacher": User.query.get(subject.teacher_id)})
+    return render_template('homepage/homepage.html', data=data)
 @main_blp.route("/students")
 def students():
     return render_template('homepage/students.html')

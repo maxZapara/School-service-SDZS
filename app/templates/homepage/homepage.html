@@ -245,6 +245,7 @@
         </div> -->
 
       <div class="masterclass">
+        {% for obj in data %}
         <article class="card-masterclass">
           <div class="img-mastercover">
             <img
@@ -260,96 +261,14 @@
               <p class="length">1h10m</p>
             </div>
             <div class="card-info-mid">
-              <h3>Ableton Live 10 : everything you need to know and more</h3>
+              <h3>{{ obj.subject.title }}</h3>
             </div>
             <div class="card-info-bottom">
-              <p class="instructeur">Arsène Rurangiza</p>
+              <p class="instructeur">{{ obj.teacher.name }}</p>
             </div>
           </div>
         </article>
-        <article class="card-masterclass">
-          <div class="img-mastercover">
-            <img
-              src="https://archive.org/download/mx-player-icon/mx-player-icon.png"
-              width="54px"
-              alt="Play button"
-              class="play-button"
-            />
-          </div>
-          <div class="card-text-area">
-            <div class="card-info-top">
-              <p class="students">652 students</p>
-              <p class="length">2h45m</p>
-            </div>
-            <div class="card-info-mid">
-              <h3>Create Ableton Live plugins using Max4Live</h3>
-            </div>
-            <div class="card-info-bottom">
-              <p class="instructeur">Arsène Rurangiza</p>
-            </div>
-          </div>
-        </article>
-        <article class="card-masterclass">
-          <div class="img-mastercover">
-            <img
-              src="https://archive.org/download/mx-player-icon/mx-player-icon.png"
-              width="54px"
-              alt="Play button"
-              class="play-button"
-            />
-          </div>
-          <div class="card-text-area">
-            <div class="card-info-top">
-              <p class="students">632 students</p>
-              <p class="length">57m</p>
-            </div>
-            <div class="card-info-mid">
-              <h3>Harmony & Melody : Learn to convey emotion with notes</h3>
-            </div>
-            <div class="card-info-bottom">
-              <p class="instructeur">Arsène Rurangiza</p>
-            </div>
-          </div>
-        </article>
-        <article class="card-masterclass">
-          <div class="img-mastercover">
-            <img
-              src="https://archive.org/download/mx-player-icon/mx-player-icon.png"
-              width="54px"
-              alt="Play button"
-              class="play-button"
-            />
-          </div>
-          <div class="card-text-area">
-            <div class="card-info-top">
-              <p class="students">963 students</p>
-              <p class="length">1h23m</p>
-            </div>
-            <div class="card-info-mid">
-              <h3>Sound design : Master the Art of Shaping Sounds</h3>
-            </div>
-            <div class="card-info-bottom">
-                <div class="img-avatar">
-                    <svg
-                      class="w-6 h-6 text-gray-800 dark:text-white"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="5"
-                      height="5"
-                      fill="currentColor"
-                      viewBox="0 0 30 30"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-              <p class="instructeur">Arsène Rurangiza</p>
-            </div>
-          </div>
-        </article>
+        {% endfor %}
       </div>
     </div>
   </body>
